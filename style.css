@@ -1,0 +1,622 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(283, 43%, 80%);
+}
+
+header {
+  width: 100%;
+  background-color: #E8DFE2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+header img {
+  width: 30px;
+  object-fit: contain;
+}
+
+nav ol {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+nav ol li a {
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+}
+
+ul {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+ul li a img.img1 {
+  width: 15px;
+}
+
+#caixa-pesquisa {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+#input-search {
+  padding: 5px;
+  font-size: 10px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 3px 0 0 3px;
+}
+
+#caixa-pesquisa button {
+  background-color: #000;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+::placeholder {
+  font-size: 10px;
+  opacity: 0.7;
+  padding-left: 5px;
+}
+
+hr {
+  border: 1px solid rgb(179, 120, 168);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+}
+
+#titulo {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(231, 227, 227);
+}
+
+#titulo h1 {
+  font-size: 18px;
+}
+
+#titulo h4 {
+  font-size: 10px;
+}
+
+#Ofertas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(219, 206, 208);
+  margin-bottom: 15px;
+}
+
+.img-cartao {
+  margin-top: 20px;
+
+}
+
+.cartao-img{
+  width: 80px;
+  object-fit: contain;
+}
+
+.footer-cartao {
+  border-top: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.preco_novo {
+  font-size: 18px;
+  color: green;
+}
+
+.preco_antigo {
+  color: #e54a4a;
+  font-weight: bold;
+  font-size: 10px;
+  text-decoration: line-through;
+  vertical-align: super;
+}
+
+.footer-cartao button {
+  background-color: #000;
+  color: white;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+#Avaliacao {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0;
+}
+
+#categorias{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 10px 14px;
+  background-color: rgb(195, 167, 202);
+}
+
+.categoria-titulo{
+  border-top: #000 solid 1px;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.categoria-link{
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  flex: wrap;
+}
+
+.categoria-link:hover{
+  text-decoration: underline;
+}
+
+#titulo-avaliacao {
+  width: 100%;
+  padding: 15px;
+  gap: 40px;
+  background-color: rgb(216, 204, 220);
+}
+
+#titulo-avaliacao h1 {
+  font-size: 14px;
+}
+
+.cartao-avaliacao {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+  margin: 10px auto;
+  width: 180px;
+  text-align: center;
+}
+
+.cartao-avaliacao p {
+  font-size: 10px;
+}
+
+footer {
+  width: 100%;
+  background-color: rgb(165, 133, 187);
+  border-top: 1px solid #ffffff;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+
+
+footer h2 {
+  font-size: 10px;
+}
+
+footer p {
+  font-size: 8px;
+}
+
+#login, #cadastro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(210, 175, 222);
+  width: 280px;
+  gap: 8px;
+}
+
+#login h1, #cadastro h1 {
+  font-size: 18px;
+}
+
+#login label, #cadastro label {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+#login input, #cadastro input {
+  padding: 5px;
+  font-size: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#login a, #cadastro a {
+  color: blue;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+/* Mobile (480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  header img {
+    width: 35px;
+  }
+
+  nav ol li a {
+    font-size: 8px;
+  }
+
+  ul li a img.img1 {
+    width: 12px;
+  }
+
+  #titulo h1 {
+    font-size: 20px;
+  }
+
+  #titulo h4 {
+    font-size: 12px;
+  }
+
+  #input-search {
+    width: 220px;
+    font-size: 11px;
+  }
+
+  #caixa-pesquisa button {
+    font-size: 11px;
+  }
+
+  .cartao {
+    width: 220px;
+    height: 280px;
+  }
+
+  .cartao-img {
+    width: 160px;
+  }
+
+  .preco_novo {
+    font-size: 20px;
+  }
+
+  .preco_antigo {
+    font-size: 12px;
+  }
+
+  .cartao-avaliacao {
+    width: 200px;
+  }
+
+  #login, #cadastro {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
+/* Tablet (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  header img {
+    width: 45px;
+  }
+
+  nav ol {
+    gap: 8px;
+  }
+
+  nav ol li a {
+    font-size: 12px;
+  }
+
+  ul li a img.img1 {
+    width: 12px;
+    margin-right: 5px;
+  }
+
+  #titulo {
+    padding: 30px;
+  }
+
+  #titulo h1 {
+    font-size: 26px;
+  }
+
+  #titulo h4 {
+    font-size: 14px;
+  }
+
+  #input-search {
+    width: 350px;
+    font-size: 13px;
+  }
+
+  #caixa-pesquisa button {
+    font-size: 13px;
+  }
+
+  .cartao {
+    width: 280px;
+    height: 340px;
+  }
+
+  .cartao-img {
+    width: 200px;
+  }
+
+  .preco_novo {
+    font-size: 24px;
+  }
+
+  .preco_antigo {
+    font-size: 14px;
+  }
+
+  .cartao-avaliacao {
+    width: 280px;
+  }
+
+  #titulo-avaliacao h1 {
+    font-size: 16px;
+  }
+
+  #login, #cadastro {
+    width: 380px;
+  }
+}
+
+/* Desktop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+
+  header img {
+    width: 55px;
+  }
+
+  nav ol {
+    gap: 15px;
+  }
+
+  nav ol li a {
+    font-size: 10px;
+  }
+
+  ul li a img.img1 {
+    width: 12px;
+  }
+
+  #titulo {
+    padding: 40px;
+  }
+
+  #titulo h1 {
+    font-size: 32px;
+  }
+
+  #titulo h4 {
+    font-size: 16px;
+  }
+
+  #input-search {
+    width: 500px;
+    font-size: 15px;
+  }
+
+  #caixa-pesquisa button {
+    font-size: 15px;
+  }
+
+  .cartao {
+    width: 300px;
+    height: 360px;
+  }
+
+  .cartao-img {
+    width: 220px;
+  }
+
+  .preco_novo {
+    font-size: 28px;
+  }
+
+  .preco_antigo {
+    font-size: 16px;
+  }
+
+  .cartao-avaliacao {
+    width: 350px;
+  }
+
+  #titulo-avaliacao h1 {
+    font-size: 18px;
+  }
+
+  #login, #cadastro {
+    width: 450px;
+  }
+}
+
+/* Desktop (1025px and above) */
+@media (min-width: 1025px) {
+  header {
+    padding: 20px 40px;
+  }
+
+  header img {
+    width: 70px;
+  }
+
+  nav ol {
+    gap: 20px;
+  }
+
+  nav ol li a {
+    font-size: 18px;
+  }
+
+  ul li a img.img1 {
+    width: 32px;
+  }
+
+  #titulo {
+    padding: 60px;
+  }
+
+  #titulo h1 {
+    font-size: 40px;
+  }
+
+  #titulo h4 {
+    font-size: 18px;
+  }
+
+  #caixa-pesquisa {
+    margin: 25px 0;
+  }
+
+  #input-search {
+    width: 700px;
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  #caixa-pesquisa button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  #Ofertas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cartao {
+    width: 320px;
+    height: 400px;
+  }
+
+  .cartao-img {
+    width: 240px;
+  }
+
+  .preco_novo {
+    font-size: 32px;
+  }
+
+  .preco_antigo {
+    font-size: 18px;
+  }
+
+  .footer-cartao button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  #titulo-avaliacao {
+    padding: 25px;
+  }
+
+  #titulo-avaliacao h1 {
+    font-size: 20px;
+  }
+
+  .cartao-avaliacao {
+    width: 450px;
+    padding: 12px;
+  }
+
+  .cartao-avaliacao p {
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 25px;
+  }
+
+  footer h2 {
+    font-size: 14px;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+
+  #login, #cadastro {
+    width: 550px;
+    padding: 25px;
+    margin: 80px auto;
+  }
+
+  #login h1, #cadastro h1 {
+    font-size: 22px;
+  }
+
+  #login input, #cadastro input {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #login button, #cadastro button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  #login a, #cadastro a {
+    font-size: 12px;
+  }
+}
